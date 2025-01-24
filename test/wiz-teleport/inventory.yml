@@ -1,0 +1,12 @@
+---
+- name: web
+  servers:
+  - host: 10.51.81.70
+  user: root1
+  password: ChangCheng@12#$
+- name: data
+  servers:
+  - host: db1.example.com
+  - host: db2.example.com
+  subs:
+  - subgroup2

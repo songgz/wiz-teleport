@@ -1,0 +1,30 @@
+PATH
+  remote: .
+  specs:
+    wiz-teleport (0.4.0)
+      net-scp (~> 4.0.0)
+      net-ssh (~> 7.3.0)
+      rake (~> 13.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.25.1)
+    mocha (2.7.1)
+      ruby2_keywords (>= 0.0.5)
+    net-scp (4.0.0)
+      net-ssh (>= 2.6.5, < 8.0.0)
+    net-ssh (7.3.0)
+    rake (13.2.1)
+    ruby2_keywords (0.0.5)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  minitest (~> 5.16)
+  mocha
+  wiz-teleport!
+
+BUNDLED WITH
+   2.5.18

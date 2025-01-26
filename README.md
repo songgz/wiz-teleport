@@ -69,7 +69,7 @@ WizTeleport is a powerful automation tool for configuration management, applicat
    #example.rb
    require 'wiz-teleport'
    
-   WizTeleport::RubyShell.run 'web1' do
+   WizTeleport::Shell.run 'web1' do
      # write ruby code
      puts "Hello from Ruby Shell!"
      

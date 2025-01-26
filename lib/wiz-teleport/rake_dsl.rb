@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 require 'rake'
-require_relative './ruby_shell'
+require_relative './shell'
 
 module WizTeleport
   module RakeDSL
 
     def shell(task_name, group_name, &block)
       Rake::Task.define_task(task_name) do
-        WizTeleport::RubyShell.run(group_name, &block) if block_given?
+        WizTeleport::Shell.run(group_name, &block) if block_given?
       end
     end
 

@@ -1,5 +1,5 @@
 # encoding: UTF-8
-require '../../lib/wiz-teleport/ruby_shell'
+require '../../lib/wiz-teleport/shell'
 
 # begin
 #   Net::SSH.start('10.51.81.70', 'root1', password: 'ChangCheng@12#$') do |ssh|
@@ -36,7 +36,7 @@ require '../../lib/wiz-teleport/ruby_shell'
 #
 # 创建shell实例
 
-WizTeleport::RubyShell.run 'web' do
+WizTeleport::Shell.run 'web' do
   # 这里可以直接写Ruby代码
   puts "Hello from Ruby Shell!"
 

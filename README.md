@@ -43,7 +43,7 @@ WizTeleport is a powerful automation tool for configuration management, applicat
 
 3. Create an WizTeleport manifest file
 
-   WizTeleport uses a manifest file to define hosts. Create a file called inventory.yml that looks like this:
+   WizTeleport uses a manifest file to define hosts. Wiz-Teleport reads a list or group from Inventory.yml and can operate these controlled nodes or hosts simultaneously and concurrently, just like Ansible. Create a file called inventory.yml that looks like this:
    ```yaml
    # inventory.yml
    ---
@@ -108,6 +108,19 @@ Executing shell tasks in rakefiles is a common requirement. A shell task is actu
    ```bash
    rake custom:example
    ```
+
+## File structure
+
+The project structure looks like this:
+```bash
+my_ruby_project/
+│
+├── inventory.yml
+├── Rakefile
+├── example.rb
+└── ... other file
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/songgz/wiz-teleport. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/songgz/wiz-teleport/blob/master/CODE_OF_CONDUCT.md).

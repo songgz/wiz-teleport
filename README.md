@@ -48,14 +48,17 @@ WizTeleport is a powerful automation tool for configuration management, applicat
    # inventory.yml
    ---
    - name: web1
-     servers:
-     - host: 127.0.0.1
      user: root
      password: root
+     servers:
+     - host: 127.0.0.1     
    - name: data1
      servers:
-     - host: db1.example.com
+     - host: db1.example.com       
      - host: db2.example.com
+       name: db1
+       user: root
+       password: root
      children:
      - web1
    ```
@@ -84,8 +87,8 @@ WizTeleport is a powerful automation tool for configuration management, applicat
    ruby example.rb
    ```
 ## Build WizTeleport task
-Executing shell tasks in rakefiles is a common requirement. Here is a basic example of how to define and execute shell tasks in a Rakefile.
- 
+Executing shell tasks in rakefiles is a common requirement. A shell task is actually a rake task. Here is a basic example of how to define and execute a shell task in a Rakefile.
+
 1. Create Rakefile
    ```ruby
    # Rakefile.rb

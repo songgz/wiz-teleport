@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wiz-teleport (0.4.0)
+    wiz-teleport (0.5.0)
       net-scp (~> 4.0.0)
       net-ssh (~> 7.3.0)
       rake (~> 13.0)

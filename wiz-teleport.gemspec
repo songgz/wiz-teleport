@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Teleport is a Ruby Gem that simplifies SSH connections and remote command execution. It is ideal for operational tasks and automated deployments."
   spec.description = "Teleport is designed to execute shell commands remotely over SSH, with no agents to install on remote systems."
-  spec.homepage = "https://github.com/songgz/teleport"
+  spec.homepage = "https://github.com/songgz/wiz-teleport"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata["changelog_uri"] = "https://github.com/songgz/teleport/releases"
+  spec.metadata["changelog_uri"] = "https://github.com/songgz/wiz-teleport/releases"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
